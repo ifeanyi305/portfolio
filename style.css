@@ -15,11 +15,11 @@ body {
 
 .main-container {
   margin: auto 15px 11px;
-  width: 80%;
+  width: 95%;
 }
 
 .header {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,6 +79,7 @@ body {
 }
 
 .lets-connect {
+  margin: 16px;
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;

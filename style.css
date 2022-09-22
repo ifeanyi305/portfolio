@@ -6,10 +6,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
-  max-width: 368px;
+  max-width: 399px;
 }
 
 .main-container {
@@ -17,7 +18,8 @@ body {
   width: 80%;
 }
 
-.header-container {
+.header {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +48,9 @@ body {
 }
 
 .img-BG {
-  /* width: 100%;
-  margin: auto; */
   background: url(images/header-shapes\ mobile.png) no-repeat;
   background-size: cover;
-
-  /* padding: 99px 0; */
+  padding: 105px 0px;
 }
 
 .name {
@@ -76,6 +75,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
+  padding: 5px;
 }
 
 .lets-connect {
@@ -89,9 +89,10 @@ body {
 }
 
 .social-media {
-  max-width: 40%;
+  max-width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 8px;
+  list-style: none;
 }

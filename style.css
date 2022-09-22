@@ -50,7 +50,7 @@ body {
 .img-BG {
   background: url(images/header-shapes\ mobile.png) no-repeat;
   background-size: cover;
-  padding: 105px 0px;
+  padding: 105px 0;
 }
 
 .name {

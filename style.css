@@ -11,13 +11,91 @@
 
 body {
   max-width: 368px;
-  background: #e5e5e5;
 }
 
-section{
+section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #e5e5e5;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.hambuger {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: #acb7c3;
+}
+
+.img-BG {
+  background: url(images/header-shapes\ mobile.png) no-repeat;
+  background-size: cover;
+  padding: 105px 0;
+}
+
+.name {
+  width: 327px;
+  height: 150px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.my-qualities1 {
+  width: 327px;
+  height: 146px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-top: 10px;
+}
+
+.lets-connect1 {
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  padding-top: 10px;
+}
+
+.social-media1 {
+  max-width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  list-style: none;
 }
 
 .project-container,

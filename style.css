@@ -9,10 +9,6 @@
   list-style: none;
 }
 
-body {
-  max-width: 368px;
-}
-
 section {
   display: flex;
   justify-content: center;
@@ -30,7 +26,6 @@ section {
 
 .logo {
   color: #6070ff;
-  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -58,7 +53,6 @@ section {
 .name {
   width: 327px;
   height: 150px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -69,7 +63,6 @@ section {
 .my-qualities1 {
   width: 327px;
   height: 146px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -80,7 +73,6 @@ section {
 
 .lets-connect1 {
   margin-bottom: 10px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

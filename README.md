@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
-Mobile-version Portfolio
+Mobile & desktop-version Portfolio
 > Description the project.
 This is the second section for my portfolio projec
 

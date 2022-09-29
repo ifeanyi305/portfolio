@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
-<body>   
+<body>
+  <section class="header-section">   
     <header>
         <div class="main-container">
             <div class="header-container">
@@ -15,6 +16,11 @@
                 <div class="my-logo">
                   <a class="Logo" href="#">My Logo</a>
                 </div>
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#">portfolio</a></li>
+                  <li class="nav-item"><a href="#">About</a></li>
+                  <li class="nav-item"><a href="#">Contact</a></li>
+                </ul>
                 <div class="hambuger">
                   <div class="bar"></div>
                   <div class="bar"></div>
@@ -24,12 +30,13 @@
             </div>
         </div>
     </header>
+  </section>
     <main>
     <section class="img-BG">
         <div class="main-container">
             <div class="portfolio-description">
                 <div class="name">
-                    <h1 class="name">I'm Ifeanyi, Glad to see you!</h1>
+                    <h1 class="name">I'm Ifeanyi oti, Glad to see you!</h1>
                 </div>
                 <div class="my-qualities1">
                   <p class="my-qualities1">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -51,8 +58,10 @@
     </section>
     <section class="section1">
       <div class="main-container">
+        <div class="grid-container">
           <div class="project-container">
               <div class="developer"><img src="images/Snapshoot Portfolio.png" alt=""></div>
+              <div class="project-wrapper span-1">
               <div class="project-review">
                   <label>Tonic</label>
               </div>
@@ -72,13 +81,11 @@
                   <div class="lang"><p>javascript</p></div>
               </div>
               <div class="project-btn"><button>See project</button></div>
-          </div>
-      </div>
-  </section>
-  <section>
-      <div class="main-container">
+              </div>
+          </div>      
           <div class="multiPostStories-con">
               <div><img src="images/Snapshoot Portfolio-2.png" alt=""></div>
+              <div class="project-wrapper span-2">
               <div class="project-review">
                   <label>Multi Post Stories</label>
               </div>
@@ -98,13 +105,11 @@
                 <div class="lang"><p>javascript</p></div>
               </div>
               <div class="project-btn"><button>See project</button></div>
-          </div>
-      </div>
-  </section>
-  <section>
-      <div class="main-container">
+              </div>
+          </div>    
         <div class="project-container">
-          <div class="developer"><img src="images/Snapshoot Portfolio.png" alt=""></div>
+          <div class="developer"><img src="images/Snapshoot Portfolio-5.png" alt=""></div>
+          <div class="project-wrapper span-3">
           <div class="project-review">
               <label>Tonic</label>
           </div>
@@ -124,13 +129,11 @@
               <div class="lang"><p>javascript</p></div>
           </div>
           <div class="project-btn"><button>See project</button></div>
-      </div>
-      </div>
-  </section>
-  <section>
-      <div class="main-container">
-        <div class="multiPostStories-con">
-          <div><img src="images/Snapshoot Portfolio-2.png" alt=""></div>
+          </div>
+      </div>    
+        <div class="multiPostStories-con push">
+          <div><img src="images/Snapshoot Portfolio-4.png" alt=""></div>
+          <div class="project-wrapper span-4">
           <div class="project-review">
               <label>Multi Post Stories</label>
           </div>
@@ -150,13 +153,15 @@
             <div class="lang"><p>javascript</p></div>
           </div>
           <div class="project-btn"><button>See project</button></div>
+          </div>
       </div>
-      </div>
+    </div>
+  </div> 
   </section>
-  <section class="about-me">
+  <section class="about-me"> 
       <div class="main-container">
           <div class="aboutMe-container">
-            <div>
+            <div class="aboutMe-grid">
               <div class="composition-aboutMe">
                   <div class="me">
                     <label>About Myself</label>
@@ -179,7 +184,7 @@
               <div class="programming-skills">
                 <div>
                   <ul class="language-title">
-                    <li class="language">Language</li>
+                    <li class="language">Languages</li>
                     <li><span class="down-arrow">&#8964;</span></li>
                   </ul>
                 </div> 
@@ -219,15 +224,15 @@
     <section>
       <div class="form-container">
         <div class="contact-container">
-          <h1>Contact Me</h1>
-          <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+          <h1 class="contact-header">Contact Me</h1>
+          <p class="p-tag">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
         <div class="form-control">
           <form action="https://formspree.io/f/xzbwrozq" method="POST">
             <input type="text" placeholder="Enter your fullname" name="name" maxlength="30" required>
             <input type="email" name="email" id="email" placeholder="input you email" required>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message" maxlength="500" required></textarea>
-            <button type="submit" class="submit">Get in touch</button>
+            <div class="submit-button"><button type="submit" class="submit">Get in touch</button></div>
           </form>
         </div>
       </div>

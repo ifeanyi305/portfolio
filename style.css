@@ -32,6 +32,10 @@ section {
   cursor: pointer;
 }
 
+.nav-list {
+  display: none;
+}
+
 .hambuger {
   cursor: pointer;
 }
@@ -314,20 +318,24 @@ button {
   background-size: 100% auto;
   background-color: #6070ff;
   border-radius: 50px 0 0 0;
+  width: 100%;
 }
 
 .contact-container {
-  text-align: center;
   padding: 20px;
-  color: white;
+  width: 100%;
   margin-top: 20%;
 }
 
-.contact-container p {
+.p-tag {
+  color: white;
+  text-align: center;
   font-size: 20px;
 }
 
-.contact-container h1 {
+.contact-header {
+  color: white;
+  text-align: center;
   font-size: 40px;
 }
 
@@ -362,4 +370,128 @@ textarea {
 .submit:hover {
   background-color: #6070ff;
   color: white;
+}
+
+@media screen and (min-width: 50em) {
+  .nav-list,
+  .nav-item {
+    margin-left: auto;
+    display: inline-block;
+    padding-left: 16px;
+  }
+
+  .hambuger {
+    display: none;
+  }
+
+  .name {
+    font-size: 48px;
+    width: 720px;
+    height: 122px;
+    line-height: 60px;
+    margin-top: 100px;
+  }
+
+  .my-qualities1 {
+    font-size: 20px;
+    width: 920px;
+  }
+
+  .social-media1 {
+    max-width: 40%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .grid-container :nth-child(2) {
+    grid-column-end: 0;
+  }
+
+  .project-container,
+  .multiPostStories-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .project-review {
+    font-size: 40px;
+    width: 496px;
+    height: 46px;
+  }
+
+  .access-project {
+    font-size: 16px;
+    width: 496px;
+    height: 50px;
+  }
+
+  .backend-dev,
+  .programming-lang {
+    width: 50%;
+  }
+
+  .aboutMe-container {
+    margin-top: 2%;
+    border-top-right-radius: 100px;
+  }
+
+  .form-container {
+    border-radius: 100px 0 0 0;
+  }
+
+  .p-tag {
+    width: 569px;
+    height: 102px;
+    margin: auto;
+  }
+
+  .aboutMe-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .me {
+    font-size: 40px;
+  }
+
+  .my-qualities {
+    width: 447px;
+    height: 102px;
+    font-size: 16px;
+  }
+
+  .programmingLanguage-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 3%;
+  }
+
+  .languages {
+    width: 122px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .framework {
+    width: 100%;
+  }
+
+  .push {
+    margin-bottom: 10%;
+  }
+
+  .about-me {
+    background-color: #fff;
+    padding-bottom: 20px;
+  }
 }

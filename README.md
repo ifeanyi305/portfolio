@@ -45,7 +45,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/ifeanyi305)
 - Twitter: [@twitterhandle](https://twitter.com/ifeanyioti)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ifeanyioti)
+- LinkedIn: [LinkedIn]([https://linkedin.com/in/ifeanyioti](https://www.linkedin.com/mwlite/in/oti-joseph-56992723b))
 
 👤 **Author2**
 
@@ -54,6 +54,8 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
+
+contributor : https://github.com/Htetaungkyaw71
 
 Contributions, issues, and feature requests are welcome!
 

@@ -14,7 +14,7 @@ This is the second section for my portfolio projec
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]([https://livedemo.com](https://ifeanyi305.github.io/portfolio/))
 
 
 ## Getting Started

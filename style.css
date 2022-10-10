@@ -17,11 +17,6 @@ section {
   background-color: #fff;
 }
 
-header .hambuger:hover + .nav-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .header {
   display: flex;
   padding: 12px;
@@ -38,12 +33,17 @@ header .hambuger:hover + .nav-list {
   cursor: pointer;
 }
 
+
+
 .nav-list {
+  display: none;
+}
+.hambuger.active + .nav-list {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   padding-left: 50px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -51,20 +51,23 @@ header .hambuger:hover + .nav-list {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  color: #FFFFFF;
+  gap: 40px;
   background: #6070FF;
   mix-blend-mode: multiply;
   z-index: 4;
 }
 
-a {
+.hambuger.active + .nav-list a {
   color: #ffffff;
 }
 
 .hambuger {
   cursor: pointer;
+  z-index: 5;
 }
-
+body:has(.hambuger.active) main{
+  filter: blur(8px);
+}
 .bar {
   display: block;
   width: 16px;

@@ -17,6 +17,11 @@ section {
   background-color: #fff;
 }
 
+header .hambuger:hover + .nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   padding: 12px;
@@ -34,7 +39,26 @@ section {
 }
 
 .nav-list {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #FFFFFF;
+  background: #6070FF;
+  mix-blend-mode: multiply;
+  z-index: 4;
+}
+
+a {
+  color: #ffffff;
 }
 
 .hambuger {

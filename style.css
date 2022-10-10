@@ -33,11 +33,10 @@ section {
   cursor: pointer;
 }
 
-
-
 .nav-list {
   display: none;
 }
+
 .hambuger.active + .nav-list {
   display: flex;
   flex-direction: column;
@@ -52,22 +51,42 @@ section {
   font-size: 32px;
   line-height: 44px;
   gap: 40px;
-  background: #6070FF;
+  background: #6070ff;
   mix-blend-mode: multiply;
   z-index: 4;
 }
 
+.hambuger div {
+  transition: 0.5s;
+}
+
 .hambuger.active + .nav-list a {
-  color: #ffffff;
+  color: #fff;
+}
+
+.hambuger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hambuger.active div:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+  background-color: #fff;
+}
+
+.hambuger.active div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+  background-color: #fff;
 }
 
 .hambuger {
   cursor: pointer;
   z-index: 5;
 }
-body:has(.hambuger.active) main{
+
+body:has(.hambuger.active) main {
   filter: blur(8px);
 }
+
 .bar {
   display: block;
   width: 16px;

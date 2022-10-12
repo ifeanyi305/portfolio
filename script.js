@@ -26,7 +26,7 @@ const project = [
     online_button: 'See source',
   },
   {
-    name: 'Tonic',
+    name: 'Multi Post Stories',
     li1: 'Canopy',
     li2: 'Back End dev',
     li3: '2015',
@@ -52,7 +52,7 @@ const project = [
     online_button: 'See source',
   },
   {
-    name: 'Tonic',
+    name: 'Multi Post Stories',
     li1: 'Canopy',
     li2: 'Back End dev',
     li3: '2015',

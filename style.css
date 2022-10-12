@@ -609,7 +609,7 @@ textarea {
   position: absolute;
   position: fixed;
   transition: .5s;
-  width: 80%;
+  width: 95%;
   top: 0;
   left: 50%;
   visibility: hidden;
@@ -639,7 +639,7 @@ textarea {
   line-height: 44px;
   color: #091E42;
   font-size: 40px;
-  padding: 15px;
+  padding: 0 15px;
 }
 
 #close-btn {
@@ -652,9 +652,8 @@ textarea {
 .lang-con {
   display: flex;
   align-items: center;
-  padding: 15px;
-  justify-content: space-between;
-  width: 27%;
+  padding: 0 15px;
+  gap: 10px;
 }
 
 .modal-list1 {
@@ -676,7 +675,7 @@ textarea {
 }
 
 .modal-img {
-  padding: 15px;
+  padding: 0 15px;
 }
 
 .modal-description {
@@ -685,10 +684,6 @@ textarea {
   align-items: center;
   justify-content: space-between;
   padding: 15px;
-}
-
-.modal-p {
-  width: 70%;
 }
 
 .all-lang-con {
@@ -707,5 +702,5 @@ textarea {
 .button-con {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  gap: 10px;
 }

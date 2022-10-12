@@ -182,7 +182,6 @@ img:hover {
 }
 
 .project-review {
-  font-size: 32px;
   font-family: sans-serif, 'Poppins';
   font-weight: 700;
   font-style: normal;
@@ -199,6 +198,23 @@ img:hover {
   justify-content: space-between;
   width: 85%;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .modal-description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-p {
+    width: 100%;
+  }
+
+  .button-con {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .canopy {
@@ -585,4 +601,111 @@ textarea {
     background-color: #fff;
     padding-bottom: 20px;
   }
+}
+
+#modal-con {
+  background: #FFFFFF;
+  z-index: 5;
+  position: absolute;
+  position: fixed;
+  transition: .5s;
+  width: 80%;
+  top: 0;
+  left: 50%;
+  visibility: hidden;
+  transform: translate(-50%,-50%) scale(0);
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border: 1px solid #EBECF0;
+  border-radius: 16px;
+}
+
+.active-modal {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) scale(1) !important;
+  visibility: visible !important;
+}
+
+.modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 44px;
+  color: #091E42;
+  font-size: 40px;
+  padding: 15px;
+}
+
+#close-btn {
+  padding: 10px;
+  color: #67798E;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.lang-con {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+  width: 27%;
+}
+
+.modal-list1 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+.modal-list {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #7A869A;
+}
+
+.modal-dot {
+  font-weight: 900;
+}
+
+.modal-img {
+  padding: 15px;
+}
+
+.modal-description {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.modal-p {
+  width: 70%;
+}
+
+.all-lang-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3px;
+}
+
+.lang-list {
+  padding: 4px 12px;
+  background: #EBEBFF;
+  border-radius: 8px;
+}
+
+.button-con {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

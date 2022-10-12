@@ -233,6 +233,7 @@ img:hover {
 
   #modal-con {
     width: 90%;
+    overflow: auto;
   }
 }
 
@@ -624,6 +625,10 @@ textarea {
   .modal-p {
     width: 100%;
   }
+
+  #modal-con {
+    width: 75%;
+  }
 }
 
 #modal-con {
@@ -631,12 +636,10 @@ textarea {
   flex-direction: column;
   gap: 12px;
   border-radius: 15px;
-  width: 95%;
   height: 95%;
   background-color: white;
   z-index: 20;
   position: fixed;
-  overflow: scroll;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(0);

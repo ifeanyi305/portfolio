@@ -193,3 +193,19 @@ openSecModal.addEventListener('click', function(){
   modalOpen(1)
   mainModal.classList.add('active-modal')
 });
+
+const openThirdModal = document.getElementById('cta3');
+const mainModal3 = document.getElementById('modal-con')
+
+openThirdModal.addEventListener('click', function(){
+  modalOpen(2)
+  mainModal.classList.add('active-modal')
+});
+
+const openFourthModal = document.getElementById('cta4');
+const mainModal4 = document.getElementById('modal-con')
+
+openFourthModal.addEventListener('click', function(){
+  modalOpen(3)
+  mainModal.classList.add('active-modal')
+});

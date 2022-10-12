@@ -77,7 +77,7 @@ function modalOpen(id) {
 
   const modalheading = document.createElement('label');
   modalheading.className = 'modal-title';
-  modalheading.textContent = project[0].name;
+  modalheading.textContent = project[id].name;
   div2.appendChild(modalheading);
 
   const delBtn = document.createElement('button');

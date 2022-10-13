@@ -213,12 +213,11 @@ openFourthModal.addEventListener('click', () => {
 
 const mail = document.getElementById('email');
 const form = document.querySelector('form');
-const errorMsg = document.querySelector('#email + span.error');
+const errorMsg = document.querySelector('.div-span');
 
 form.addEventListener('click', (event) => {
   if (mail.value !== mail.value.toLowerCase()) {
     errorMsg.textContent = 'Email address needs to be in lowercase';
-    errorMsg.className = 'error';
     event.preventDefault();
   } else {
     errorMsg.textContent = '';

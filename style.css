@@ -491,7 +491,7 @@ textarea {
   color: #6070ff;
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -776,12 +776,9 @@ input:focus:invalid {
   border: 2px solid red;
 }
 
-.error {
+.div-span {
   color: white;
   background-color: red;
   width: 100%;
-}
-
-.error.active {
-  padding: 0.3em;
+  margin-bottom: 10%;
 }

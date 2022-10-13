@@ -24,6 +24,7 @@ section {
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 10;
 }
 
 .header {
@@ -63,10 +64,11 @@ section {
   gap: 40px;
   background: #6070ff;
   mix-blend-mode: multiply;
+  opacity: 0.8;
   z-index: 4;
 }
 
-.nav-item{
+.nav-item {
   z-index: 10;
 }
 
@@ -103,7 +105,7 @@ body:has(.hambuger.active) main {
 
 body:has(#modal-con.active-modal) main {
   filter: blur(10px);
-} 
+}
 
 .bar {
   display: block;

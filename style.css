@@ -193,7 +193,6 @@ body:has(#modal-con.active-modal) main {
 
 img {
   max-width: 100%;
-  transform: scale(1);
   transition: 0.5s;
 }
 

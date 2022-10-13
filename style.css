@@ -101,6 +101,7 @@ section {
 
 body:has(.hambuger.active) main {
   z-index: 0;
+  filter: blur(8px);
 }
 
 body:has(#modal-con.active-modal) main {

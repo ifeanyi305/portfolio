@@ -66,6 +66,10 @@ section {
   z-index: 4;
 }
 
+.nav-item{
+  z-index: 10;
+}
+
 .hambuger div {
   transition: 0.5s;
 }
@@ -94,12 +98,12 @@ section {
 }
 
 body:has(.hambuger.active) main {
-  filter: blur(8px);
+  z-index: 0;
 }
 
 body:has(#modal-con.active-modal) main {
   filter: blur(10px);
-}
+} 
 
 .bar {
   display: block;
@@ -760,4 +764,22 @@ textarea {
   border-radius: 8px;
   padding: 8px 12px;
   gap: 10px;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+.error {
+  color: white;
+  background-color: red;
+  width: 100%;
+}
+
+.error.active {
+  padding: 0.3em;
 }

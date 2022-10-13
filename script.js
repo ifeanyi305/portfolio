@@ -208,3 +208,36 @@ openFourthModal.addEventListener('click', () => {
   modalOpen(3);
   mainModal.classList.add('active-modal');
 });
+
+/* javascript code for form validation */
+
+const mail = document.getElementById('email');
+const form = document.querySelector('form');
+const errorMsg = document.querySelector('#email + span.error');
+
+form.addEventListener('click', (event) => {
+  if (mail.value !== mail.value.toLowerCase()) {
+    errorMsg.textContent = 'Email address needs to be in lowercase';
+    errorMsg.className = 'error';
+    event.preventDefault();
+  }else{
+    errorMsg.textContent = "";
+  }
+});
+
+function showError() {
+  if (mail.value !== mail.value.toLowerCase()) {
+    mail.textContent = '';
+    errorMsg.className = 'error';
+  }
+  errorMsg.className = 'error.active';
+}
+
+mail.addEventListener('input', () => {
+  if (mail.validity.valid) {
+    errorMsg.textContent = '';
+    errorMsg.className = 'error';
+  } else {
+    showError();
+  }
+});

@@ -230,10 +230,10 @@ const userInfo = {
 
 /* javascript code for preserving data in the browser */
 if (localStorage.getItem('userInfo')) {
-  const json = JSON.parse(localStorage.getItem('userInfo'));
-  mail.value = json.email;
-  username.value = json.username;
-  textArea.value = json.textArea;
+  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  mail.value = userInfo.email;
+  username.value = userInfo.username;
+  textArea.value = userInfo.textArea;
 }
 
 username.addEventListener('input', () => {

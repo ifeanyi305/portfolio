@@ -226,9 +226,9 @@ form.addEventListener('click', (event) => {
   }
 });
 const userInfo = {
-  email: '',
   username: '',
-  textArea: '',
+  email: '',
+  textArea: ''
 };
 
 /* javascript code for preserving data in the browser */

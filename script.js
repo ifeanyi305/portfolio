@@ -226,8 +226,11 @@ form.addEventListener('click', (event) => {
   }
 });
 const userInfo = {
+
   email: '',
   username: '',
+  username: '',
+  email: '',
   textArea: '',
 };
 

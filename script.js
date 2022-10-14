@@ -226,18 +226,9 @@ form.addEventListener('click', (event) => {
   }
 });
 const userInfo = {
-
-  username: '',
-  email: '',
-  textArea: ''
-
-
-  email: '',
-  username: '',
   username: '',
   email: '',
   textArea: '',
-
 };
 
 /* javascript code for preserving data in the browser */

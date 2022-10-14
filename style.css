@@ -786,3 +786,7 @@ input:focus:invalid {
   margin-bottom: 10%;
   border-radius: 5px;
 }
+
+.removed {
+  display: none;
+}

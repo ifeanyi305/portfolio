@@ -226,11 +226,17 @@ form.addEventListener('click', (event) => {
   }
 });
 const userInfo = {
+  email: '',
+  username: '',
+  textArea: '',
 };
 
 /* javascript code for preserving data in the browser */
 if (localStorage.getItem('userInfo')) {
-  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+  const json = JSON.parse(localStorage.getItem('userInfo'));
+  userInfo.email = json.email;
+  userInfo.username = json.username;
+  userInfo.textArea = json.textArea;
   mail.value = userInfo.email;
   username.value = userInfo.username;
   textArea.value = userInfo.textArea;

@@ -226,14 +226,20 @@ form.addEventListener('click', (event) => {
   }
 });
 const userInfo = {
+  username: '',
+  email: '',
+  textArea: '',
 };
 
 /* javascript code for preserving data in the browser */
 if (localStorage.getItem('userInfo')) {
   const json = JSON.parse(localStorage.getItem('userInfo'));
-  mail.value = json.email;
-  username.value = json.username;
-  textArea.value = json.textArea;
+  userInfo.email = json.email;
+  userInfo.username = json.username;
+  userInfo.textArea = json.textArea;
+  mail.value = userInfo.email;
+  username.value = userInfo.username;
+  textArea.value = userInfo.textArea;
 }
 
 username.addEventListener('input', () => {

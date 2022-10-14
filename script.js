@@ -212,6 +212,8 @@ openFourthModal.addEventListener('click', () => {
 /* javascript code for form validation */
 
 const mail = document.getElementById('email');
+const username = document.getElementById('userName')
+const textArea = document.getElementById('message')
 const form = document.querySelector('form');
 const errorMsg = document.querySelector('.div-span');
 
@@ -223,3 +225,17 @@ form.addEventListener('click', (event) => {
     errorMsg.textContent = '';
   }
 });
+
+/* javascript code for preserving data in the browser */
+const mailData = mail.value.trim();
+const userData = username.value.trim();
+const textData = textArea.value.trim();
+
+
+const userInfo = {
+   mailData: email,
+   userData: userName,
+   textData: message
+}
+console.log(userInfo)
+localStorage.setItem('userInfo', userInfo)

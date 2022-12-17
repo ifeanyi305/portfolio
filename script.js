@@ -10,9 +10,6 @@ for (let i = 0; i < anchor.length; i += 1) {
 }
 
 /* Javscript code for Popup window */
-code = howarethey;
-console.log(code);
-
 
 const project = [
   {
@@ -230,8 +227,13 @@ form.addEventListener('click', (event) => {
 });
 const userInfo = {
 
+
   email: '',
   username: '',
+
+  username: '',
+  email: '',
+
 
   username: '',
   email: '',

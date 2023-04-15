@@ -9,17 +9,28 @@
   list-style: none;
 }
 
+body::before {
+  display: block;
+  content: "";
+  height: 100px;
+}
+
 section {
   background: #e5e5e5;
 }
 
 .header-section {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
 }
 
 .header {
   display: flex;
   padding: 12px;
+  background-color: #fff;
   justify-content: space-between;
   margin-left: 48px;
   margin-right: 48px;
@@ -37,8 +48,64 @@ section {
   display: none;
 }
 
+.hambuger.active + .nav-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  gap: 40px;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  opacity: 0.8;
+  z-index: 4;
+}
+
+.nav-item {
+  z-index: 10;
+}
+
+.hambuger div {
+  transition: 0.5s;
+}
+
+.hambuger.active + .nav-list a {
+  color: #fff;
+}
+
+.hambuger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hambuger.active div:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+  background-color: #fff;
+}
+
+.hambuger.active div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+  background-color: #fff;
+}
+
 .hambuger {
   cursor: pointer;
+  z-index: 5;
+}
+
+body:has(.hambuger.active) main {
+  z-index: 0;
+  filter: blur(8px);
+}
+
+body:has(#modal-con.active-modal) main {
+  filter: blur(10px);
 }
 
 .bar {
@@ -127,7 +194,6 @@ section {
 
 img {
   max-width: 100%;
-  transform: scale(1);
   transition: 0.5s;
 }
 
@@ -136,7 +202,6 @@ img:hover {
 }
 
 .project-review {
-  font-size: 32px;
   font-family: sans-serif, 'Poppins';
   font-weight: 700;
   font-style: normal;
@@ -153,6 +218,41 @@ img:hover {
   justify-content: space-between;
   width: 85%;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .modal-description {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
+
+  .modal-p {
+    width: 100%;
+  }
+
+  .button-con {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  #modal-con {
+    width: 90%;
+    overflow: auto;
+  }
+
+  .developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .canopy {
@@ -205,35 +305,25 @@ img:hover {
   line-height: 16px;
 }
 
-.project-btn {
+button {
   display: flex;
   margin-top: 15px;
   flex-direction: row;
   align-items: center;
   padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.5s;
+  color: #396df2;
+  cursor: pointer;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  width: 128px;
-}
-
-button {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  display: flex;
-  cursor: pointer;
-  transform: 0.5s;
-  align-items: center;
-  text-align: center;
-  border: none;
   background-color: white;
 }
 
 button:hover {
-  text-decoration: underline;
+  background-color: #7f8cff;
+  color: white;
 }
 
 .aboutMe-container {
@@ -278,23 +368,17 @@ button:hover {
   margin-top: 5px;
 }
 
+.main-containerrr {
+  max-width: 1100px;
+  margin: 30px;
+}
+
 .social-media {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 8%;
   width: 60%;
-}
-
-.project-btn2 {
-  margin-top: 11px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  width: 165px;
 }
 
 .language-title {
@@ -404,7 +488,7 @@ textarea {
   color: #6070ff;
   border-radius: 5px;
   padding: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -540,4 +624,170 @@ textarea {
     background-color: #fff;
     padding-bottom: 20px;
   }
+
+  .modal-p {
+    width: 100%;
+  }
+
+  #modal-con {
+    width: 75%;
+  }
+}
+
+#modal-con {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 15px;
+  height: 95%;
+  background-color: white;
+  z-index: 20;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  padding: 15px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+.active-modal {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+  visibility: visible !important;
+}
+
+.modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+}
+
+.whole-con {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 44px;
+  color: #091e42;
+  font-size: 40px;
+  padding-left: 15px;
+}
+
+#close-btn {
+  padding: 10px;
+  border: none;
+  color: #67798e;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+#close-btn:hover {
+  color: red;
+  background-color: white;
+}
+
+.lang-con {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+
+.modal-list1 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+}
+
+.modal-list {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #7a869a;
+}
+
+.modal-dot {
+  font-weight: 900;
+}
+
+.img-div {
+  height: 100%;
+  display: block;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modal-img {
+  padding: 0 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-description {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100%;
+  gap: 25px;
+  padding: 15px;
+}
+
+.live-con {
+  align-self: flex-start;
+}
+
+.all-lang-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3px;
+}
+
+.lang-list {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.button-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modal-btn {
+  margin-top: 15px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 10px;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+.div-span {
+  color: white;
+  background-color: red;
+  width: 100%;
+  margin-bottom: 10%;
+  border-radius: 5px;
+}
+
+.removed {
+  display: none;
 }

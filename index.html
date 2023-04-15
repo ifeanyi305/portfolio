@@ -16,23 +16,23 @@
                 <div class="my-logo">
                   <a class="Logo" href="#">My Logo</a>
                 </div>
-                <ul class="nav-list">
-                  <li class="nav-item"><a href="#">portfolio</a></li>
-                  <li class="nav-item"><a href="#">About</a></li>
-                  <li class="nav-item"><a href="#">Contact</a></li>
-                </ul>
                 <div class="hambuger">
                   <div class="bar"></div>
                   <div class="bar"></div>
                   <div class="bar"></div>
                 </div>
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="#section1">portfolio</a></li>
+                  <li class="nav-item"><a href="#about">About</a></li>
+                  <li class="nav-item"><a href="#contact-me">Contact</a></li>
+                </ul>
               </nav>
             </div>
         </div>
     </header>
   </section>
     <main>
-    <section class="img-BG">
+    <section class="img-BG" id="portfolio">
         <div class="main-container">
             <div class="portfolio-description">
                 <div class="name">
@@ -45,22 +45,23 @@
                   <p class="lets-connect1">LET’S CONNECT</p>                
                 <div class="social-links-container">
                 <ul class="social-media1">
-                    <li><a href="#"><img src="images/twitter-icon.svg" alt="Twitter"></a></li>
-                    <li><a href="#"><img src="images/Linkedin icon.svg" alt="Linkedin"></a></li>
+                    <li><a href="https://twitter.com/Otiifeanyi2020"><img src="images/twitter-icon.svg" alt="Twitter"></a></li>
+                    <li><a href="https://www.linkedin.com/in/oti-joseph-56992723b/"><img src="images/Linkedin icon.svg" alt="Linkedin"></a></li>
                     <li><a href="#"><img src="images/M-logo.svg" alt="Medium"></a></li>
-                    <li><a href="#"><img src="images/github-icon.svg" alt="Github"></a></li>
+                    <li><a href="https://github.com/ifeanyi305?tab=repositories"><img src="images/github-icon.svg" alt="Github"></a></li>
                     <li><a href="#"><img src="images/index-finger.svg" alt="Angellist"></a></li>
                 </ul>
                 </div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
-    <section class="section1">
+    <section class="section1" id="section1">
       <div class="main-container">
         <div class="grid-container">
           <div class="project-container">
               <div class="developer"><img src="images/Snapshoot Portfolio.png" alt=""></div>
+              <div class="block">
               <div class="project-wrapper span-1">
               <div class="project-review">
                   <label>Tonic</label>
@@ -80,11 +81,13 @@
                   <div class="lang"><p>css</p></div>
                   <div class="lang"><p>javascript</p></div>
               </div>
-              <div class="project-btn"><button>See project</button></div>
+              <div class="project-btn"><button id="cta">See project</button></div>
+              </div>
               </div>
           </div>      
           <div class="multiPostStories-con">
-              <div><img src="images/Snapshoot Portfolio-2.png" alt=""></div>
+              <div class="developer"><img src="images/Snapshoot Portfolio-2.png" alt=""></div>
+              <div class="block">
               <div class="project-wrapper span-2">
               <div class="project-review">
                   <label>Multi Post Stories</label>
@@ -104,11 +107,13 @@
                 <div class="lang"><p>css</p></div>
                 <div class="lang"><p>javascript</p></div>
               </div>
-              <div class="project-btn"><button>See project</button></div>
+              <div class="project-btn"><button id="cta2">See project</button></div>
               </div>
-          </div>    
+              </div>
+            </div>    
         <div class="project-container">
           <div class="developer"><img src="images/Snapshoot Portfolio-5.png" alt=""></div>
+          <div class="block">
           <div class="project-wrapper span-3">
           <div class="project-review">
               <label>Tonic</label>
@@ -128,11 +133,13 @@
               <div class="lang"><p>css</p></div>
               <div class="lang"><p>javascript</p></div>
           </div>
-          <div class="project-btn"><button>See project</button></div>
+          <div class="project-btn"><button id="cta3">See project</button></div>
           </div>
-      </div>    
+          </div>
+        </div>    
         <div class="multiPostStories-con push">
-          <div><img src="images/Snapshoot Portfolio-4.png" alt=""></div>
+          <div class="developer"><img src="images/Snapshoot Portfolio-4.png" alt=""></div>
+          <div class="block">
           <div class="project-wrapper span-4">
           <div class="project-review">
               <label>Multi Post Stories</label>
@@ -152,15 +159,16 @@
             <div class="lang"><p>css</p></div>
             <div class="lang"><p>javascript</p></div>
           </div>
-          <div class="project-btn"><button>See project</button></div>
+          <div class="project-btn"><button id="cta4">See project</button></div>
           </div>
-      </div>
+          </div>
+        </div>
     </div>
   </div> 
   </section>
-  <section class="about-me"> 
-      <div class="main-container">
-          <div class="aboutMe-container">
+  <section class="about-me" id="about"> 
+      <div class="main-containerrr">
+          <div class="aboutMe-container" id="aboutMe-container">
             <div class="aboutMe-grid">
               <div class="composition-aboutMe">
                   <div class="me">
@@ -201,6 +209,10 @@
                           <li><img src="images/Ellipse 1-3.png" alt=""></li>
                           <li>CSS</li>
                       </ul>
+                      <div class="removed">
+                        <h1>yeah</h1>
+                        <p>noooo</p>
+                      </div>
                   </div>
                   <div class="other">
                     <ul class="framework">
@@ -220,23 +232,28 @@
       </div>
   </section>
   </main>
+  <main>
   <footer>
-    <section>
+    <section id="contact-me">
       <div class="form-container">
-        <div class="contact-container">
+        <div class="contact-container" id="contact-container">
           <h1 class="contact-header">Contact Me</h1>
           <p class="p-tag">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         </div>
         <div class="form-control">
           <form action="https://formspree.io/f/xzbwrozq" method="POST">
-            <input type="text" placeholder="Enter your fullname" name="name" maxlength="30" required>
-            <input type="email" name="email" id="email" placeholder="input you email" required>
+            <input type="text" id="user-name" placeholder="Enter your fullname" name="name" maxlength="30" required>
+            <input type="email" name="email" id="email" placeholder="input your email" required>
+            <span class="error" aria-live="polite"></span>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message" maxlength="500" required></textarea>
             <div class="submit-button"><button type="submit" class="submit">Get in touch</button></div>
+            <div class="div-span"><span class="error" aria-live="polite"></span></div>
           </form>
         </div>
       </div>
     </section>
   </footer>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

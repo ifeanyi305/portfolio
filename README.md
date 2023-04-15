@@ -1,19 +1,20 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
-
+Mobile & desktop-version Portfolio
 > Description the project.
-
+This is the second section for my portfolio projec
 
 ## Built With
-
+- HTML
+- CSS
 - Major languages
 - Frameworks
 - Technologies used
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ifeanyi305.github.io/portfolio/)
 
 
 ## Getting Started
@@ -42,9 +43,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ifeanyi305)
+- Twitter: [@twitterhandle](https://twitter.com/ifeanyioti)
+- LinkedIn: [LinkedIn]([https://linkedin.com/in/ifeanyioti](https://www.linkedin.com/mwlite/in/oti-joseph-56992723b))
 
 👤 **Author2**
 
@@ -53,6 +54,8 @@ To get a local copy up and running follow these simple example steps.
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
+
+contributor : https://github.com/Htetaungkyaw71
 
 Contributions, issues, and feature requests are welcome!
 
@@ -64,6 +67,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- https://github.com/Htetaungkyaw71
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc

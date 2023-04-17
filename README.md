@@ -28,11 +28,20 @@ To get a local copy up and running follow these simple example steps.
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone the repository: go to Your Cli and run "https://ifeanyi305.github.io/portfolio/"
+- Clone the repository: go to Your Cli and run
+```
+$ git clone https://github.com/ifeanyi305/portfolio.git
+```
 
-- change into the repository:  run 'cd repository name'
+- change into the repository:  run
+```
+$ cd repository name
+```
 
-- Install all the project dependences: Run 'npm Insttall' in your cli
+- Install all the project dependences: Run 
+```
+$ npm Insttall
+``` 
 
 - now you can view the project in the browser using any web server of choice
 

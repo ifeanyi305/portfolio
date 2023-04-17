@@ -20,7 +20,7 @@ const potfolioProjects = [
     project_img: 'images/travellers.png',
     source_icon: 'images/github-icon.svg',
     live_icon: 'images/Icon.png',
-    description: "A Fullstack application that allows users to see traveling packages and book based on their preference. rank.",
+    description: 'A Fullstack application that allows users to see traveling packages and book based on their preference. rank.',
     li4: 'Rails',
     li5: 'React',
     li6: 'Redux',
@@ -36,7 +36,7 @@ const potfolioProjects = [
     project_img: 'images/easyLaunch.png',
     source_icon: 'images/github-icon.svg',
     live_icon: 'images/Icon.png',
-    description: "Easy Launch is a cutting-edge web3 blockchain platform that provides an all-in-one solution for users seeking to launch their own cryptocurrency. With a robust and secure architecture, Easy Launch enables users to create and manage their own digital assets and smart contracts, as well as conduct seamless and secure transactions on the blockchain.",
+    description: 'Easy Launch is a cutting-edge web3 blockchain platform that provides an all-in-one solution for users seeking to launch their own cryptocurrency. With a robust and secure architecture, Easy Launch enables users to create and manage their own digital assets and smart contracts, as well as conduct seamless and secure transactions on the blockchain.',
     li4: 'solidity',
     li5: 'React',
     li6: 'Redux',
@@ -52,7 +52,7 @@ const potfolioProjects = [
     project_img: 'images/budget.png',
     source_icon: 'images/github-icon.svg',
     live_icon: 'images/Icon.png',
-    description: "Budget App is a mobile web application where you can manage your budget: You have a list of expenses associated with a category, so that you can see how much money you spent and on what.",
+    description: 'Budget App is a mobile web application where you can manage your budget: You have a list of expenses associated with a category, so that you can see how much money you spent and on what.',
     li4: 'Rails',
     li5: 'React',
     li6: 'Redux',
@@ -68,7 +68,7 @@ const potfolioProjects = [
     project_img: 'images/crypto-tradeoff.png',
     source_icon: 'images/github-icon.svg',
     live_icon: 'images/Icon.png',
-    description: "Crypto tradeoff is a crypto exchange website that displays list of crypto currency exchange websites based on their rank.",
+    description: 'Crypto tradeoff is a crypto exchange website that displays list of crypto currency exchange websites based on their rank.',
     li4: 'css',
     li5: 'React',
     li6: 'Redux',
@@ -81,7 +81,7 @@ const potfolioProjects = [
 const projects = () => {
   const getProjects = document.querySelector('.grid-container');
   const allProjects = document.createElement('div');
-  allProjects.className = 'project-container'
+  allProjects.className = 'project-container';
   potfolioProjects.forEach((scheme) => {
     allProjects.innerHTML += `
     <div class="project_card">
@@ -109,23 +109,20 @@ const projects = () => {
       </div>
     </div>
     `;
-  })
+  });
   getProjects.appendChild(allProjects);
-}
+};
 
 projects();
 
-const closeModal = () => {
-  project_container.remove()
-}
-const project_container = document.createElement('div');
+const projectContainer = document.createElement('div');
 const modalOpen = (id) => {
-  project_container.id = 'modal-con';
-  close_button = '&times';
-  project_container.innerHTML = `
+  projectContainer.id = 'modal-con';
+  const closeButton = '&times';
+  projectContainer.innerHTML = `
       <div class="modal-heading">
         <p class="modal-title">${potfolioProjects[id].name}</p>
-        <button id="close-btn" onClick="closeModal()"><span>${close_button}</span></button>
+        <button id="close-btn" onClick="closeModal()"><span>${closeButton}</span></button>
       </div>
       <ul class="lang-con">
         <li class="modal-list1">${potfolioProjects[id].li1}</li>
@@ -153,9 +150,9 @@ const modalOpen = (id) => {
           </div>
         </div>
       </div>
-    `
-  document.body.appendChild(project_container);
-}
+    `;
+  document.body.appendChild(projectContainer);
+};
 const modalButtons = document.querySelectorAll('[id^="cta"]');
 
 modalButtons.forEach((button, index) => {
@@ -164,7 +161,18 @@ modalButtons.forEach((button, index) => {
   });
 });
 
+// eslint-disable-next-line
+const closeModal = () => {
+  projectContainer.remove();
+};
+
 /* javascript code for form validation */
+
+const userInfo = JSON.parse(localStorage.getItem('userInfo')) || {
+  username: '',
+  email: '',
+  textArea: '',
+};
 
 function saveInputToLocalStorage(inputElement, key) {
   inputElement.addEventListener('input', () => {
@@ -187,12 +195,6 @@ form.addEventListener('click', (event) => {
     errorMsg.textContent = '';
   }
 });
-
-const userInfo = JSON.parse(localStorage.getItem('userInfo')) || {
-  username: '',
-  email: '',
-  textArea: '',
-};
 
 mail.value = userInfo.email;
 username.value = userInfo.username;

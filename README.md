@@ -50,8 +50,8 @@ $ npm Insttall
 👤 **Author1**
 
 - GitHub: [@ifeanyi305](https://github.com/ifeanyi305)
-- Twitter: [@otiifeanyi2020](https://twitter.com/ifeanyioti)
-- LinkedIn: [otijoseph]([https://linkedin.com/in/ifeanyioti](https://www.linkedin.com/mwlite/in/oti-joseph-56992723b))
+- Twitter: [@otiifeanyi2020](https://twitter.com/Otiifeanyi2020)
+- LinkedIn: [otijoseph](https://www.linkedin.com/in/oti-joseph-ifeanyi/)
 
 
 ## 🤝 Contributing

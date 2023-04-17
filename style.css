@@ -104,7 +104,7 @@ body:has(.hambuger.active) main {
   filter: blur(8px);
 }
 
-body:has(#modal-con.active-modal) main {
+body:has(#modal-con) main {
   filter: blur(10px);
 }
 
@@ -127,7 +127,6 @@ body:has(#modal-con.active-modal) main {
 
 .name {
   width: 327px;
-  height: 150px;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -189,12 +188,17 @@ body:has(#modal-con.active-modal) main {
   width: 100%;
   gap: 12px;
   padding: 16px;
-  margin-top: 25%;
+  margin-top: 5%;
 }
 
 img {
   max-width: 100%;
   transition: 0.5s;
+}
+
+.project_img {
+  width: 80%;
+  height: 100%;
 }
 
 img:hover {
@@ -274,9 +278,8 @@ img:hover {
   color: #7a869a;
 }
 
-.access-project {
+.project_description {
   width: 295px;
-  height: 76px;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -537,17 +540,20 @@ textarea {
 
   .project-container,
   .multiPostStories-con {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
     width: 80%;
+    background-color: transparent;
     margin: auto;
     margin-top: 10%;
   }
 
-  .span-2,
-  .span-4 {
-    grid-row-start: 1;
+  .project_card {
+    background-color: #fff;
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8%;
   }
 
   .project-review {
@@ -556,10 +562,9 @@ textarea {
     height: 46px;
   }
 
-  .access-project {
+  .project_description {
     font-size: 16px;
     width: 496px;
-    height: 50px;
   }
 
   .backend-dev,
@@ -644,16 +649,9 @@ textarea {
   position: fixed;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%);
   padding: 15px;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
-}
-
-.active-modal {
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) scale(1) !important;
-  visibility: visible !important;
 }
 
 .modal-heading {
@@ -680,6 +678,7 @@ textarea {
 
 #close-btn {
   padding: 10px;
+  cursor: pointer;
   border: none;
   color: #67798e;
   font-weight: 500;
@@ -752,6 +751,7 @@ textarea {
 
 .lang-list {
   padding: 4px 12px;
+  margin: 3px;
   background: #ebebff;
   border-radius: 8px;
 }
@@ -785,8 +785,4 @@ input:focus:invalid {
   width: 100%;
   margin-bottom: 10%;
   border-radius: 5px;
-}
-
-.removed {
-  display: none;
 }

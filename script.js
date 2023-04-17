@@ -11,205 +11,167 @@ for (let i = 0; i < anchor.length; i += 1) {
 
 /* Javscript code for Popup window */
 
-const project = [
+const potfolioProjects = [
   {
-    name: 'Tonic',
-    li1: 'Canopy',
-    li2: 'Back End dev',
-    li3: '2015',
-    project_img: 'images/Snapshoot Portfolio.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    li4: 'Html',
-    li5: 'Css',
-    li6: 'Javascript',
-    live_button: 'See live',
-    online_button: 'See source',
+    name: 'Travellers hub',
+    li1: 'Microverse',
+    li2: 'Fullstack dev',
+    li3: '2023',
+    project_img: 'images/travellers.png',
+    source_icon: 'images/github-icon.svg',
+    live_icon: 'images/Icon.png',
+    description: "A Fullstack application that allows users to see traveling packages and book based on their preference. rank.",
+    li4: 'Rails',
+    li5: 'React',
+    li6: 'Redux',
+    live_demo: 'https://travelers-hub-front.onrender.com/',
+    display_project_button: 'See project',
+    source_code: 'https://github.com/ifeanyi305/travelers_hub_front-end',
   },
   {
-    name: 'Multi Post Stories',
-    li1: 'Canopy',
-    li2: 'Back End dev',
-    li3: '2015',
-    project_img: 'images/Snapshoot Portfolio-2.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    li4: 'Html',
-    li5: 'Css',
-    li6: 'Javascript',
-    live_button: 'See live',
-    online_button: 'See source',
+    name: 'Easy Launch',
+    li1: 'Microverse',
+    li2: 'Web3 blockchain',
+    li3: '2023',
+    project_img: 'images/easyLaunch.png',
+    source_icon: 'images/github-icon.svg',
+    live_icon: 'images/Icon.png',
+    description: "Easy Launch is a cutting-edge web3 blockchain platform that provides an all-in-one solution for users seeking to launch their own cryptocurrency. With a robust and secure architecture, Easy Launch enables users to create and manage their own digital assets and smart contracts, as well as conduct seamless and secure transactions on the blockchain.",
+    li4: 'solidity',
+    li5: 'React',
+    li6: 'Redux',
+    live_demo: 'https://easylaunch.onrender.com/',
+    display_project_button: 'See project',
+    source_code: 'https://github.com/ifeanyi305/initial_coin_offering',
   },
   {
-    name: 'Tonic',
-    li1: 'Canopy',
-    li2: 'Back End dev',
-    li3: '2015',
-    project_img: 'images/Snapshoot Portfolio-3.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    li4: 'Html',
-    li5: 'Css',
-    li6: 'Javascript',
-    live_button: 'See live',
-    online_button: 'See source',
+    name: 'Budget App',
+    li1: 'Microverse',
+    li2: 'Fullstack dev',
+    li3: '2023',
+    project_img: 'images/budget.png',
+    source_icon: 'images/github-icon.svg',
+    live_icon: 'images/Icon.png',
+    description: "Budget App is a mobile web application where you can manage your budget: You have a list of expenses associated with a category, so that you can see how much money you spent and on what.",
+    li4: 'Rails',
+    li5: 'React',
+    li6: 'Redux',
+    live_demo: 'https://budget-bp9n.onrender.com/',
+    display_project_button: 'See project',
+    source_code: 'https://github.com/ifeanyi305/Budget-App',
   },
   {
-    name: 'Multi Post Stories',
-    li1: 'Canopy',
-    li2: 'Back End dev',
-    li3: '2015',
-    project_img: 'images/Snapshoot Portfolio-4.png',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    li4: 'Html',
-    li5: 'Css',
-    li6: 'Javascript',
-    live_button: 'See live',
-    online_button: 'See source',
+    name: 'Crypto Tradeoff',
+    li1: 'Microverse',
+    li2: 'Front-end dev',
+    li3: '2023',
+    project_img: 'images/crypto-tradeoff.png',
+    source_icon: 'images/github-icon.svg',
+    live_icon: 'images/Icon.png',
+    description: "Crypto tradeoff is a crypto exchange website that displays list of crypto currency exchange websites based on their rank.",
+    li4: 'css',
+    li5: 'React',
+    li6: 'Redux',
+    live_demo: 'https://crypto-trade-off.netlify.app/',
+    display_project_button: 'See project',
+    source_code: 'https://github.com/ifeanyi305/crypto-website',
   },
 ];
 
-const div1 = document.createElement('div');
-div1.id = 'modal-con';
-document.body.appendChild(div1);
-
-function modalOpen(id) {
-  const div2 = document.createElement('div');
-  div2.className = 'modal-heading';
-  div1.appendChild(div2);
-
-  const modalheading = document.createElement('label');
-  modalheading.className = 'modal-title';
-  modalheading.textContent = project[id].name;
-  div2.appendChild(modalheading);
-
-  const delBtn = document.createElement('button');
-  delBtn.id = 'close-btn';
-  delBtn.innerHTML = '<span>&times;</span>';
-  delBtn.addEventListener('click', () => {
-    div1.classList.remove('active-modal');
-    div1.innerHTML = '';
-  });
-  div2.appendChild(delBtn);
-
-  const ul = document.createElement('ul');
-  ul.className = 'lang-con';
-  div1.appendChild(ul);
-
-  const li1 = document.createElement('li');
-  li1.className = 'modal-list1';
-  li1.textContent = project[id].li1;
-  ul.appendChild(li1);
-
-  const lio = document.createElement('li');
-  lio.className = 'modal-list';
-  lio.innerHTML = '<span class="modal-dot">.</span>';
-  ul.appendChild(lio);
-
-  const li2 = document.createElement('li');
-  li2.className = 'modal-list';
-  li2.textContent = project[0].li2;
-  ul.appendChild(li2);
-
-  const lio2 = document.createElement('li');
-  lio2.className = 'modal-list';
-  lio2.innerHTML = '<span class="modal-dot">.</span>';
-  ul.appendChild(lio2);
-
-  const li3 = document.createElement('li');
-  li3.className = 'modal-list';
-  li3.textContent = project[0].li3;
-  ul.appendChild(li3);
-
-  const div3 = document.createElement('div');
-  div3.className = 'whole-con';
-  div1.appendChild(div3);
-
-  const divImg = document.createElement('div');
-  divImg.className = 'img-div';
-  div3.appendChild(divImg);
-
-  const modalImg = document.createElement('img');
-  modalImg.className = 'modal-img';
-  modalImg.setAttribute(
-    'src',
-    project[id].project_img,
-  );
-  divImg.appendChild(modalImg);
-
-  const div4 = document.createElement('div');
-  div4.className = 'modal-description';
-  div3.appendChild(div4);
-
-  const pTag = document.createElement('p');
-  pTag.className = 'modal-p';
-  pTag.textContent = project[0].description;
-  div4.appendChild(pTag);
-
-  const div5 = document.createElement('div');
-  div5.className = 'live-con';
-  div4.appendChild(div5);
-
-  const div6 = document.createElement('div');
-  div6.className = 'all-lang-con';
-  div5.appendChild(div6);
-
-  const p1 = document.createElement('p');
-  p1.className = 'lang-list';
-  p1.textContent = project[id].li4;
-  div6.appendChild(p1);
-
-  const p2 = document.createElement('p');
-  p2.className = 'lang-list';
-  p2.textContent = project[0].li5;
-  div6.appendChild(p2);
-
-  const p3 = document.createElement('p');
-  p3.className = 'lang-list';
-  p3.textContent = project[0].li6;
-  div6.appendChild(p3);
-
-  const div7 = document.createElement('div');
-  div7.className = 'button-con';
-  div5.appendChild(div7);
-
-  const onlineBtn = document.createElement('button');
-  onlineBtn.className = 'modal-btn';
-  onlineBtn.innerHTML = 'see Source <img src="images/github-icon.svg" alt="">';
-  div7.appendChild(onlineBtn);
-
-  const liveBtn = document.createElement('button');
-  liveBtn.className = 'modal-btn';
-  liveBtn.innerHTML = 'see live <img src="images/Icon.png" alt="">';
-  div7.appendChild(liveBtn);
+const projects = () => {
+  const getProjects = document.querySelector('.grid-container');
+  const allProjects = document.createElement('div');
+  allProjects.className = 'project-container'
+  potfolioProjects.forEach((scheme) => {
+    allProjects.innerHTML += `
+    <div class="project_card">
+      <div class="developer"><img class="project_img" src="${scheme.project_img}" alt=""></div>
+      <div class="block">
+        <div class="project-wrapper span-1">
+          <div class="project-review">
+            <label>${scheme.name}</label>
+          </div>
+          <ul class="backend-dev">
+            <li class="canopy">${scheme.li1}</li>
+            <li class="back-end">${scheme.li2}</li>
+            <li class="back-end">${scheme.li3}</li>
+          </ul>
+          <div class="project_description">
+            <p>${scheme.description}</p>
+          </div>
+          <ul class="programming-lang">
+          <li class="lang">${scheme.li4}</li>
+          <li class="lang">${scheme.li5}</li>
+          <li class="lang">${scheme.li6}</li>
+          </ul>
+          <div class="project-btn"><button id="cta">${scheme.display_project_button}</button></div>
+        </div>
+      </div>
+    </div>
+    `;
+  })
+  getProjects.appendChild(allProjects);
 }
-const openModal = document.getElementById('cta');
-const mainModal = document.getElementById('modal-con');
 
-openModal.addEventListener('click', () => {
-  modalOpen(0);
-  mainModal.classList.add('active-modal');
-});
+projects();
 
-const openSecModal = document.getElementById('cta2');
+const closeModal = () => {
+  project_container.remove()
+}
+const project_container = document.createElement('div');
+const modalOpen = (id) => {
+  project_container.id = 'modal-con';
+  close_button = '&times';
+  project_container.innerHTML = `
+      <div class="modal-heading">
+        <p class="modal-title">${potfolioProjects[id].name}</p>
+        <button id="close-btn" onClick="closeModal()"><span>${close_button}</span></button>
+      </div>
+      <ul class="lang-con">
+        <li class="modal-list1">${potfolioProjects[id].li1}</li>
+        <li class="modal-list">${potfolioProjects[id].li2}</li>
+        <li class="modal-list">${potfolioProjects[id].li3}</li>
+      </ul>
+      <div class="whole-con">
+        <div class="img-div">
+          <img class="modal-img" alt="potfolioProjects img" src="${potfolioProjects[id].project_img}" />
+        </div>
+        <div class="modal-description">
+          <div class="debug2">
+            <p class="modal-p">${potfolioProjects[id].description}</p>
+          </div>
+          <div class="debug">
+            <ul class="all-lang-con">
+              <li class="lang-list">${potfolioProjects[id].li4}</li>
+              <li class="lang-list">${potfolioProjects[id].li5}</li>
+              <li class="lang-list">${potfolioProjects[id].li6}</li>
+            </ul>
+            <div class="button-con">
+              <button class="modal-btn"><a href="${potfolioProjects[id].source_code}">Github</a><img alt="github icon" src="${potfolioProjects[id].source_icon}" /></button>
+              <button class="modal-btn"><a href="${potfolioProjects[id].live_demo}">Live demo</a><img alt="github icon" src="${potfolioProjects[id].live_icon}" /></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
+  document.body.appendChild(project_container);
+}
+const modalButtons = document.querySelectorAll('[id^="cta"]');
 
-openSecModal.addEventListener('click', () => {
-  modalOpen(1);
-  mainModal.classList.add('active-modal');
-});
-
-const openThirdModal = document.getElementById('cta3');
-
-openThirdModal.addEventListener('click', () => {
-  modalOpen(2);
-  mainModal.classList.add('active-modal');
-});
-
-const openFourthModal = document.getElementById('cta4');
-
-openFourthModal.addEventListener('click', () => {
-  modalOpen(3);
-  mainModal.classList.add('active-modal');
+modalButtons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    modalOpen(index);
+  });
 });
 
 /* javascript code for form validation */
+
+function saveInputToLocalStorage(inputElement, key) {
+  inputElement.addEventListener('input', () => {
+    userInfo[key] = inputElement.value.trim();
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+  });
+}
 
 const mail = document.getElementById('email');
 const username = document.getElementById('user-name');
@@ -225,32 +187,17 @@ form.addEventListener('click', (event) => {
     errorMsg.textContent = '';
   }
 });
-const userInfo = {
+
+const userInfo = JSON.parse(localStorage.getItem('userInfo')) || {
   username: '',
   email: '',
   textArea: '',
 };
 
-/* javascript code for preserving data in the browser */
-if (localStorage.getItem('userInfo')) {
-  const json = JSON.parse(localStorage.getItem('userInfo'));
-  userInfo.email = json.email;
-  userInfo.username = json.username;
-  userInfo.textArea = json.textArea;
-  mail.value = userInfo.email;
-  username.value = userInfo.username;
-  textArea.value = userInfo.textArea;
-}
+mail.value = userInfo.email;
+username.value = userInfo.username;
+textArea.value = userInfo.textArea;
 
-username.addEventListener('input', () => {
-  userInfo.username = username.value.trim();
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
-});
-mail.addEventListener('input', () => {
-  userInfo.email = mail.value.trim();
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
-});
-textArea.addEventListener('input', () => {
-  userInfo.textArea = textArea.value.trim();
-  localStorage.setItem('userInfo', JSON.stringify(userInfo));
-});
+saveInputToLocalStorage(username, 'username');
+saveInputToLocalStorage(mail, 'email');
+saveInputToLocalStorage(textArea, 'textArea');

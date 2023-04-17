@@ -1,61 +1,53 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-Mobile & desktop-version Portfolio
+# My Portfolio
+
 > Description the project.
-This is the second section for my portfolio projec
+My first milestone in the process of creating my portfolio website, I used the design template from Figma. In this portfolio website, I showcased my skills. This is my first project at Microverce. It's a personal portfolio built with HTML, CSS AND JAVASCRIPT.
 
 ## Built With
 - HTML
 - CSS
-- Major languages
-- Frameworks
-- Technologies used
+- Javascript
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://ifeanyi305.github.io/portfolio/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- You must have a code compiler installed on your machine such as (VS code or Atom).
 
-### Install
+**Go to your Cli and follow the steps below**
 
-### Usage
+To get a local copy up and running follow these simple example steps.
 
-### Run tests
+- Clone the repository: go to Your Cli and run "https://ifeanyi305.github.io/portfolio/"
 
-### Deployment
+- change into the repository:  run 'cd repository name'
 
+- Install all the project dependences: Run 'npm Insttall' in your cli
 
+- now you can view the project in the browser using any web server of choice
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/ifeanyi305)
-- Twitter: [@twitterhandle](https://twitter.com/ifeanyioti)
-- LinkedIn: [LinkedIn]([https://linkedin.com/in/ifeanyioti](https://www.linkedin.com/mwlite/in/oti-joseph-56992723b))
+- GitHub: [@ifeanyi305](https://github.com/ifeanyi305)
+- Twitter: [@otiifeanyi2020](https://twitter.com/ifeanyioti)
+- LinkedIn: [otijoseph]([https://linkedin.com/in/ifeanyioti](https://www.linkedin.com/mwlite/in/oti-joseph-56992723b))
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
-contributor : https://github.com/Htetaungkyaw71
+contributor : [@Htetaungkyaw71](https://github.com/Htetaungkyaw71)
 
 Contributions, issues, and feature requests are welcome!
 
@@ -67,13 +59,10 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- https://github.com/Htetaungkyaw71
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [@Htetaungkyaw71](https://github.com/Htetaungkyaw71)
+- Hat tip to Microverse..
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
